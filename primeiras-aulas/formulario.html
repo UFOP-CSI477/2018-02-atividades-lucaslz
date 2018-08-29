@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html pt-br>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="titulo text-center">
+                <h1>Olá Mundo</h1>
+                <h2>Formulário</h2>
+            </div>
+            <div class="link text-center">
+                <a href="./" title="home">Home</a>
+                <a href="formulario.html" title="cadastro" target="">Cadastro</a>
+                <a href="www.google.com" title="Google" target="_blank">Google</a>
+                <a href="www.facebook.com" title="facebook" target="_blank">Facebook</a>
+                <a href="www.twitter.com" title="twitter" target="_blank">Twiter</a>
+            </div>
+        </div>        
+    </header>
+    <main>
+        <div class="container">
+            <div class="conteudo">
+                <form action="validar.html" method="post" accept-charset="utf-8">
+                    <div>
+                        <label for="inputNome">Nome: </label>
+                        <input style="margin-left: 10%; padding-right: 20%;" type="text" name="nome" placeholder="Nome" id="inputNome">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="inputEndereco">Endereco: </label>
+                        <input style="margin-left: 5%; padding-right: 20%;" type="text" name="endereco" placeholder="Endereco" id="inputEndereco">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="inputTelefone">Telefone: </label>
+                        <input style="margin-left: 7%; padding-right: 20%;" type="text" name="telefone" placeholder="Telefone" id="inputTelefone">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Genero: </label>
+                        <label for="feminino">Feminino: </label>
+                        <input type="radio" id="feminino" name="genero" value="F">
+                        
+                        <label for="masculino">Masculino: </label>
+                        <input type="radio" name="genero" id="masculino" value="M">
+
+                        <label for="naoBinario">Não Binário: </label>
+                        <input type="radio" name="genero" id="naoBinario" value="N">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Áreas de interesse: </label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="web" name="area[0]">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="web">Desenvolvimento Web: </label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="bancoDados" name="area[1]">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="bancoDados">Banco de Dados: </label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="otimizacao" name="area[2]">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="otimizacao">Otimização: </label>
+                    </div>
+                    <br>
+                        <label for="cidade">Cidade: </label>
+                        <select name="cidade" style="margin-left: 10%; padding-right: 30%;" id="cidade">
+                            <option value="0">Selecione</option>
+                            <option value="1">Jão Monlevade</option>
+                            <option value="2">Itabira</option>
+                            <option value="3">Alvinópolis</option>
+                            <option value="4" selected>Belo Horizonte</option>
+                            <option value="5">Itaúna</option>
+                        </select>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="usuario">Usuário: </label>
+                        <input type="text" name="usuario" id="usuario">
+
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <br>
+                    <div>
+                        <button class="btnCadastrar">Cadastrar</button>
+                        <button class="btnCadastrar" type="reset" style="background-color: red;">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

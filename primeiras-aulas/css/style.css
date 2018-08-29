@@ -1,0 +1,157 @@
+/**
+ * Resetando o template 
+ */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Corpo da pagina
+ */
+.container {
+    width: 100%;
+}
+
+/**
+ * Sistemas de Grids
+ */
+.gr-1 {
+   display: grid;
+   grid-template-columns:  100%; 
+}
+
+.gr-2 {
+   display: grid;
+   grid-template-columns:  50% 50%; 
+}
+
+.gr-3 {
+   display: grid;
+   grid-template-columns:  33.333333333% 33.333333333% 33.333333333%;
+}
+
+.gr-4 {
+   display: grid;
+   grid-template-columns:  25% 25% 25% 25%; 
+}
+
+.gr-5 {
+   display: grid;
+   grid-template-columns:  20% 20% 20% 20%; 
+}
+
+.mt-1 {
+    margin-top: 1%;
+}
+
+.mt-2 {
+    margin-top: 2%;
+}
+
+.mt-3 {
+    margin-top: 3%;
+}
+
+.mt-4 {
+    margin-top: 4%;
+}
+
+.mt-5 {
+    margin-top: 5%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/**
+ * Link do cabecalho
+ */
+.link > a {
+    color: #FFF;
+    background-color: #000;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.link > a:hover {
+    color: #000;
+    background-color: #fff;
+    transition: 1s;
+}
+
+.titulo {
+    color: #fff;
+}
+
+.titulo > h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.titulo > h2 {
+    padding-bottom: 3%;
+}
+
+header {
+    padding-top: 2%;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+main {
+    background-color: #fff;
+}
+
+.imagem {
+    margin: auto;
+    width: 10%;
+}
+
+.imagem > img {
+    margin-top: 20%;
+}
+
+.conteudo {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+form {
+    background-color: #fff;
+    padding-top: 5%;
+    margin-left: 35%;
+}
+
+input {
+    border-radius: 5%;
+    background-color: #eee;
+    border-color: #4343;
+    border-width: 5px;
+}
+
+select {
+    border-radius: 5%;
+    background-color: #eee;
+    border-color: #4343;
+    border-width: 5px;
+}
+
+.btnCadastrar {
+    color: #fff;
+    background-color: blue;
+    border-color: black;
+    border-radius: 2px;
+    border-width: 2px;
+    padding: 5px;
+}
+
+.btnCadastrar:hover {
+    opacity: 0.5;
+    cursor: all-;
+}
