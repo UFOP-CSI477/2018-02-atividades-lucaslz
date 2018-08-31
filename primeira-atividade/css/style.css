@@ -155,3 +155,47 @@ select {
     opacity: 0.5;
     cursor: all-;
 }
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    border-width: 5px;
+    border-collapse: collapse;
+}
+
+caption.tituloTabela {
+    font-size: 1.5em;
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+table > thead {
+    color: white;
+    background-color: black;
+}
+
+table > thead > tr > th {
+    padding: 10px;
+}
+
+table > tbody > tr > td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+#rodape {
+    border: 1px solid #333;    
+}
+
+#rodape > td {
+    border: 1px solid #333;    
+}
+
+#qtAluno {
+    col
+}
+
+table > tbody > tr:hover {
+    background-color: #333;
+    color: white;
+}
