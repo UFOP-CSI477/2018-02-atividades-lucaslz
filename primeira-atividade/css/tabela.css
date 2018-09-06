@@ -26,15 +26,11 @@ table > tbody > tr > td {
 }
 
 #rodape {
-    border: 1px solid #333;    
+    /* border: 1px solid #333;     */
 }
 
 #rodape > td {
-    border: 1px solid #333;    
-}
-
-#qtAluno {
-    col
+    /* border: 1px solid #333;     */
 }
 
 table > tbody > tr:hover {
