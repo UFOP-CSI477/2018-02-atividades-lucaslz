@@ -1,0 +1,17 @@
+/*
+    Alterando cor do jumbotron
+*/
+.jumbotron {
+    background-color: #696969 !important;
+    color:  white;
+}
+
+/*
+    Estilizando os links
+*/
+.nav-link:hover {
+    text-decoration: none;
+    background-color: beige;
+    transition: 1s;
+    color: black !important;
+}
