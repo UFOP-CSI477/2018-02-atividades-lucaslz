@@ -4,15 +4,16 @@ Primeira atividade da disciplina: CSI477 WEB.
 
 ## Ferramentas ultilizadas
 
-- nodejs: Roda o java script do lado servidor
-- yarn: Instala qualquer pacote java-script que eu precisar, exemplo: jquery e bootstrap
+- nodejs: Roda o java script do lado servidor.
+- yarn: Instala qualquer pacote java-script que eu precisar, exemplo: jquery e bootstrap.
+- gulp: Automatizador de tarefaz: junta, minifica e otimiza arquivos e imagens.
 
 ## Tecnologias usadas na pratica
 
-- HTML5
-- CSS3
-- JQuery / Java-Script
-- Bootstrap
+- HTML5.
+- CSS3.
+- JQuery / Java-Script.
+- Bootstrap.
 
 ## De mais informações
 
