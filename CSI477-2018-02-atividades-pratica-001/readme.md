@@ -19,3 +19,4 @@ Primeira atividade da disciplina: CSI477 WEB.
 
 - É possível rodar no navegador normalmente apenas clicando no <b>app.html</b>
 - Tem o formado de <b>Single Page Aplication</b>
+- Tanto a atividade de Competição de carrinho de rolimã, quanto o calculo de IMC então no arquivo app.html
