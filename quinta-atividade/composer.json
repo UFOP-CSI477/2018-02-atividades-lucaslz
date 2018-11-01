@@ -1,0 +1,19 @@
+{
+    "name": "lucas/quinta-atividade",
+    "description": "Quinta atividade da disciplina de web",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Lima",
+            "email": "lucaslz@rocketmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
