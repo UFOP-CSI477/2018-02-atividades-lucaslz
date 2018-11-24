@@ -17,3 +17,34 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
     return $logger;
 };
+
+//configuracoes do banco de dados
+$container['db'] = function($c) {
+	$manager = new \Illuminate\Database\Capsule\Manager;
+	$manager->addConnection($c->get('settings')['db']);
+	$manager->setAsGlobal();
+	$manager->bootEloquent();
+	return $manager->getConnection('default');
+};
+
+//Inicializando o banco de dados
+$container['db'];
+
+//Registrando o twig php no container
+$container['view'] = function ($c) {
+	$settings = $c->get('settings')['renderer'];
+	$view = new \Slim\Views\Twig(
+		$settings['template_path']
+		// ['cache' => $settings['template_cache']]
+	);
+
+	$router = $c->get('router');
+	$uri = \Slim\Http\Uri::createFromEnvironment(new \Slim\Http\Environment($_SERVER));
+	$view->addExtension(new Slim\Views\TwigExtension($router, $uri));
+
+	return $view;
+};
+
+
+
+

@@ -2,13 +2,16 @@
 
 use Slim\Http\Request;
 use Slim\Http\Response;
+use App\Models\Compras;
+use App\Models\Produtos;
 
 // Routes
 
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
-
+$app->get('/produtos', function (Request $request, Response $response, array $args) {
+   
+   	// Buscando dados de produtos
+    $produtos = (new Produtos())->lstProdutos();
+   
     // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    return $this->view->render($response, 'produtos.html', ['produtos' => $produtos]);
 });

@@ -1,0 +1,35 @@
+{{ include("/base/header.html") }}
+    <main>
+        {{ dados }}
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-10 offset-1 justify-content-center text-center">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Foto</th>
+                                <th>Preço</th>
+                                <th>Comprar</th>
+                                <th>Alterar</th>
+                                <th>Deletar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for prod in produtos %}
+                                <tr>
+                                    <td>{{ prod.nome }}</td>
+                                    <td><img src="{{ prod.imagem }}" alt="{{ prod.nome }}" width="32px"></td>
+                                    <td class="preco">{{ prod.preco }}</td>
+                                    <td><a href="{{ prod.comprar }}"><i class="fas fa-shopping-cart"></a></i></td>
+                                    <td><a href="{{ prod.deletar }}"><i class="fas fa-edit"></a></i></td>
+                                    <td><a href="{{ prod.alterar }}"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>    
+            </div>
+        </div>
+    </main>
+{{ include("/base/rodape.html") }}
