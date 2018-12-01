@@ -197,3 +197,10 @@ var cadastrarProduto = function () {
 var chamarModal = function () {
 	$('#cadastrarProduto').modal('toggle');
 };
+
+/**
+ * Submet o formulario de compra
+ */
+var finalizarCompra = function () {
+	console.log($(this).closest('form').submit());
+};

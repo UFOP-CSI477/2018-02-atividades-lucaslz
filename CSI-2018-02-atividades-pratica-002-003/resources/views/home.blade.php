@@ -10,9 +10,14 @@
                 <div class="card-header">Lista de Produtos</div>
                 <div class="card-body">
                     @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                    @if (session('error'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('error') }}
+                        </div>
                     @endif
                     <div class="container">
                         <div class="row text-center">
@@ -23,20 +28,29 @@
                                         <tr>
                                             <th>Nome</th>
                                             <th>Imagem</th>
-                                            <th>Comprar</th>
                                             <th>Alterar</th>
-                                            <th>Deletar</th>
+                                            @if (!in_array($usuario->type, [1,3]))
+                                                <th>Deletar</th>
+                                            @endif
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($produtos as $element)
                                             <tr>
                                                 <td>{{ $element->nome }}</td>
-                                                <td><img src="{{ url("app/public/produtos/{$element->image}") }}">
+                                                <td><img src="{{ url("storage/produtos/{$element->imagem}") }}" width="50px"></td>
+                                                <td>
+                                                    <a href="{{ url("produtos/editar/{$element->id}") }}">
+                                                        <span class="oi oi-pencil"></span>
+                                                    </a>
                                                 </td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
+                                                @if (!in_array($usuario->type, [1,3]))
+                                                    <td>
+                                                        <a href="{{ url("produtos/deletar/{$element->id}") }}">
+                                                            <span class="oi oi-x"></span>
+                                                        </a>
+                                                    </td>
+                                                @endif
                                             </tr>
                                         @endforeach
                                     </tbody>

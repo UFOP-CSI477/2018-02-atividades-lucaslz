@@ -18,7 +18,7 @@ class CreateComprasTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('produto_id')->unsigned();
             $table->smallInteger('quantidade');
-            $table->dateTime('data');
+            $table->dateTime('data')->nullable();
             $table->timestamps();
         });
 

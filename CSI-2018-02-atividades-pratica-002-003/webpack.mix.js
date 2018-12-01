@@ -25,7 +25,8 @@ mix.scripts([
 
 //arquivos de estilo
 mix.styles([
-    'node_modules/datatables.net-dt/css/jquery.dataTables.min.css'
+    'node_modules/datatables.net-dt/css/jquery.dataTables.min.css',
+    'resources/open-iconic-master/font/css/open-iconic-bootstrap.min.css'
 ], 'public/css/all.css');
 
 //Copiando diretorio de imagens do datatables
